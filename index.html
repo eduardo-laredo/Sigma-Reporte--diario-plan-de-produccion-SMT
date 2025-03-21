@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Reporte SMT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- <div>
+
+        <video id="videofondo" class="video-background" loading="lazy" poster="https://carontestudio.com/img/contacto.jpg" autoplay="autoplay" no-controls="" muted="muted" loop=""><source src="https://carontestudio.com/img/f1.mp4" type="video/mp4" ;="" codecs="avc1.42E01E, mp4a.40.2"></video>
+    </div> -->
+        
+        <header class="header">
+            <div class="box-logo">
+            <img src="sgmalogo.png" alt="logo">
+        </div>
+    </header>
+    <main> 
+     
+
+    
+    <div class="wrapper">
+        <div class="up">
+                <div class="titllte">
+                    <h1>REPORTE DIARIO</h1>
+                    <h1>PLAN DE PRODUCCION</h1>    
+                    <h1>SMT</h1>
+                </div>
+                
+                <div class="box-wrapper table-header">
+                    <label class="label bold" for="FECHA">DATOS</label>
+                    <div>
+
+                    <div class="input-wrapper">
+                        <input class="input" type="date" id="FECHA">
+                        <label class="label" for="FECHA">FECHA</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input class="input upperCase" type="text" id="Operador">
+                        <label class="label " for="Operador">Operador</label>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <input class="input" type="number" id="NoEmpleado">
+                        <label class="label" for="NoEmpleado">NO. EMPLEADO</label>
+                    </div>
+                </div>
+                
+                <div class="line-turno">
+                    <div class="input-wrapper">
+                        
+                        <select class="input cm select-css" name="linea" id="linea">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <label class="label" for="linea">Linea</label>
+
+                </div>
+                
+                    <div class="input-wrapper">
+                        <select class="cm input select-css" id="turno">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <label class="label" for="turno">Truno</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+   
+        <div id="mainTable" class="table"></div>
+        <div>
+
+            <button class="button" onclick="allData()"">TODOS LOS DATOS</button>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <p>
+            <img src="EduardoLogoWhite.png" alt="logoDeveloper" width="220px">
+            Todos los derechos reservados 2024.
+        </p>
+        
+    </footer>
+    <dialog class="content-dialog" id="modal1"></dialog>
+    <dialog class="content-dialog" id="lineaParada"></dialog>
+</body>
+<script src="scrips/scrip.js"></script>
+<script src="scrips/createTable.js"></script>
+<script src="scrips/createResumeTable.js"></script>
+
+</html>
